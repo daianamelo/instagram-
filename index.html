@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/42a3795ac1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid p-2 w-75">
+        <nav class="navbar navbar-light bg-light m-2 bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+                <form class="d-flex align-content-end">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> Create a new Post</button>
+
+                    <!-- ruedita -->
+
+                    <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Accesibility</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Privacy and data</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-danger" href="#">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create a new Post</h5>
+
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="message-text" class="col-form-label">Caption:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- boton de publicar -->
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                    <div class="btn-group">
+                                        <!-- boton de settings -->
+                                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Action
+                                        </button>
+                                        <!-- menu dropdown -->
+
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Action
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Pofile</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Accesibility</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Privacy and Data</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Log Out</a>
+                                                </li>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                </form>
+
+            </div>
+
+        </nav>
+        <!-- navbar fin -->
+
+        <!-- los botones de dividir en dos-->
+        <nav>
+            <!-- boton de grillita -->
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <!-- boton celdas -->
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i>
+                </button>
+                <!-- boton cuadrado -->
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    <i class="fa-solid fa-square-full"></i>
+                </button>
+
+            </div>
+
+        </nav>
+        <!-- para poner los contenido de c/u -->
+        <div class="tab-content justify-content-center" id="nav-tabContent">
+            <!-- contenido de tab celdas -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col px-0">
+                            <div class="card ">
+                                <img class="card-img" src="https://pbs.twimg.com/media/Fi4Zd94XEAESL_O.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="card">
+                                <img class=" card-img w-100" src="https://sm.mashable.com/t/mashable_in/photo/default/ring22_6w1y.720.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="card">
+                                <img class="card-img w-100" src="https://i.pinimg.com/736x/50/26/2a/50262ad97d408c2f2e67e196ab15c931--oort-cloud-giant-star.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col px-0">
+                            <div class="card ">
+                                <img class="card-img" src="https://stsci-opo.org/STScI-01EVT9FQ45H3JMN20W9NM77553.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="card">
+                                <img class=" card-img w-100" src="https://i.pinimg.com/736x/d6/47/50/d64750c86950fc52434045b5315d2583.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="card">
+                                <img class="card-img w-100" src="https://stsci-opo.org/STScI-01EVTA0GDZPSCPW03KG8RRREV2.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col px-0">
+                            <div class="card">
+                                <img class="card-img w-100" src="https://cdn.pixabay.com/photo/2019/12/21/06/04/space-4709750_960_720.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="card">
+                                <img class=" card-img w-100" src="https://pbs.twimg.com/ext_tw_video_thumb/1386666290828353544/pu/img/QfPCzzjnxeePVw4_.jpg:large" alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="card ">
+                                <img class="card-img w-100" src="https://pbs.twimg.com/media/Fi4Zd94XEAESL_O.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- terminael contenido 1 -->
+            </div>
+            <!-- contenido de tab cuadradito -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="container text-center">
+
+                    <div class="row justify-content-center p-2">
+
+                        <div class="card" style="width:75;">
+                            <p class="text-end fs-6 m-0">1/3</p>
+                            <h5 class="card-title fs-4 text-start">La tierra de noche</h5>
+                            <img src="https://i.pinimg.com/originals/9b/f4/db/9bf4db93401d02a63a92b85c9599cb14.jpg" class="card-img-top" alt="...">
+                            <div class="card-body pt-0 px-0">
+                                <p class="card-title text-sm-start fw-bold">
+                                    <i class="fa-regular fa-heart"></i>2828373 Likes</p>
+                                <p class="fs-6 text-sm-start fw-light px-0 pt-0">Algo algo blah blah blah</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row justify-content-center p-2">
+
+                        <div class="card" style="width: 75rem;">
+                            <p class="text-end fs-6 m-0">2/3</p>
+                            <h5 class="card-title fs-4 text-start">Tierra</h5>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjc2xlIZMUiLJw8rlZyhrJ_L-YnGXHygplErmoP1aJ18cmZkXUkl_vjQN80bhMnFmUHVs&usqp=CAU" class="card-img-top" alt="...">
+                            <div class="card-body pt-0 px-0">
+                                <p class="card-title text-sm-start fw-bold">
+                                    <i class="fa-regular fa-heart"></i>2828373 Likes</p>
+                                <p class="fs-6 text-sm-start fw-light px-0 pt-0">Algo algo blah blah blah</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row justify-content-center p-2">
+
+                        <div class="card" style="width: 75rem;">
+                            <p class="text-end fs-6 m-0">3/3</p>
+                            <h5 class="card-title fs-4 text-start">Nebulosa</h5>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9tpIRTNMDJykAUPBH4JXgNaAo34djNBYs1tYHWmLHerOFnvI4K_oFR3IC41TF5mtWrQ&usqp=CAU" class="card-img-top" alt="...">
+                            <div class="card-body pt-0 px-0">
+                                <p class="card-title text-sm-start fw-bold">
+                                    <i class="fa-regular fa-heart"></i>2828373 Likes</p>
+                                <p class="fs-6 text-sm-start fw-light px-0 pt-0">Algo algo blah blah blah</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- bootstratpjs -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
